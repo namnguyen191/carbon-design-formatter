@@ -10,6 +10,7 @@ const GraphQLFormatter = () => {
   const [curFocus, setCurFocus] = useState();
 
   const convertOnClick = () => {
+    debugger;
     if (curFocus === 'str') {
       let formattedGraphQL;
       try {

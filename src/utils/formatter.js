@@ -2,7 +2,9 @@ import prettier from 'prettier';
 import graphQLParser from 'prettier/parser-graphql';
 
 export const stringToGraphQL = (input) => {
-  input = input.replace(/\//g, '');
+  console.log(input);
+  input = input.replace(/\\/g, '');
+  console.log(input);
   input = prettier.format(input, {
     parser: 'graphql',
     plugins: [graphQLParser]

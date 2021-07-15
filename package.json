@@ -2,6 +2,7 @@
   "name": "online-formatter",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://namnguyen191.github.io/carbon-design-formatter/",
   "dependencies": {
     "@carbon/grid": "^10.27.0",
     "@carbon/icons-react": "^10.32.0",
@@ -14,6 +15,7 @@
     "carbon-components": "^10.35.0",
     "carbon-components-react": "^7.35.0",
     "carbon-icons": "^7.0.7",
+    "gh-pages": "^3.2.3",
     "graphql": "^15.5.0",
     "graphql-prettier": "^1.0.6",
     "monaco-editor": "^0.24.0",
@@ -31,6 +33,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
