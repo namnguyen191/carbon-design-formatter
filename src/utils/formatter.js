@@ -15,6 +15,6 @@ export const stringToGraphQL = (input) => {
 export const graphQLToString = (input) => {
   return input
     .replace(/"/g, '/"')
-    .replace(/\r?\n|\r/g, '')
+    .replace(/\r?\n|\r/g, ' ')
     .replace(/\s\s/g, '');
 };
