@@ -27,8 +27,6 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
-console.log(process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN);
-
 const client = new ApolloClient({
   cache,
   link: authLink.concat(httpLink)

@@ -10,7 +10,6 @@ const GraphQLFormatter = () => {
   const [curFocus, setCurFocus] = useState();
 
   const convertOnClick = () => {
-    debugger;
     if (curFocus === 'str') {
       let formattedGraphQL;
       try {
@@ -24,7 +23,6 @@ const GraphQLFormatter = () => {
     } else if (curFocus === 'graphql') {
       let formattedStr;
       try {
-        console.log(graphql);
         formattedStr = graphQLToString(graphql);
       } catch (err) {
         setStr('Syntax Error!');
@@ -48,6 +46,7 @@ const GraphQLFormatter = () => {
           width: 400,
           height: 400
         }}
+        onClick={() => setCurFocus('graphql')}
       >
         <CodeEditor
           language="graphql"
@@ -67,6 +66,7 @@ const GraphQLFormatter = () => {
           width: 400,
           height: 400
         }}
+        onClick={() => setCurFocus('str')}
       >
         <textarea
           className="transformed-text"
