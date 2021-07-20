@@ -2,6 +2,7 @@ import prettier from 'prettier';
 import graphQLParser from 'prettier/parser-graphql';
 
 export const stringToGraphQL = (input) => {
+  input = input.trim();
   if (input[0] === '"') {
     input = input.substring(1);
   }
